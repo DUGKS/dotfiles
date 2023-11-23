@@ -18,11 +18,11 @@ quitscr() {
 }
 
 removePath() {
-    if [ ! -d $2 ]; then
+    if [ ! -d "$2" ]; then
         echo $1
         return 0;
     fi
-    if [ -z $1 ]; then
+    if [ -z "$1" ]; then
         echo $2
         return 0;
     fi
@@ -31,11 +31,11 @@ removePath() {
 }
 
 appendPath() {
-    if [ ! -d $2 ]; then
+    if [ ! -d "$2" ]; then
         echo $1
         return 0;
     fi
-    if [ -z $1 ]; then
+    if [ -z "$1" ]; then
         echo $2
         return 0;
     fi
